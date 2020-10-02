@@ -21,3 +21,7 @@ def duplicate_count(text):
 print(duplicate_count("abcde"))
 print(duplicate_count("abcdea"))
 print(duplicate_count("indivisibility"))
+
+#This is the one liner solution of this problem. 
+def duplicate_count(text):
+    return sum([1 for i in set(text.lower()) if text.lower().count(i) > 1])
