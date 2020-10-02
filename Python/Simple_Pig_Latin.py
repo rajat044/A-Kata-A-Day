@@ -23,3 +23,7 @@ def pig_it(text):
 
 print(pig_it('Pig latin is cool'))
 print(pig_it('This is my string'))
+
+#Alternat one-liner solution
+def pig_it(a):
+	return ' '.join([i[1:] + i[0] + 'ay' if i.isalnum() else i for i in a.split()])
