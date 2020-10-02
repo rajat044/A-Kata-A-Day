@@ -19,3 +19,7 @@ print(explode(s))
 
 s = "102269"
 print(explode(s))
+
+#Alternat one-liner solution
+def explode(s):
+    return ''.join([i*int(i) for i in s])
