@@ -19,3 +19,7 @@ def Descending_Order(num):
 # Test Case
 
 print(Descending_Order(53242323))
+
+#Alternate solution 
+def descending_order(num):
+    return int(''.join(sorted(str(num))[::-1]))
